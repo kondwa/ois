@@ -1,0 +1,22 @@
+table{
+ border: 1px solid silver;
+ border-radius: 5px;
+ margin: 1px;
+ padding: 3px;
+}
+table thead th{
+  border: 1px solid silver;
+  margin: 1px;
+  padding: 3px;
+}
+table tbody td{
+  border: 1px solid silver;
+  margin: 1px;
+  padding: 1px;
+}
+table tfoot td{
+  border: 1px solid silver;
+  margin: 1px;
+  padding: 1px;
+}
+

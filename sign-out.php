@@ -1,0 +1,3 @@
+<?php
+  $ua->signout();
+?>
