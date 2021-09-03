@@ -1,4 +1,13 @@
-a{ color: blueviolet; }
+a{ 
+    color: blueviolet;
+    text-decoration: none; 
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active,a:visited{
+    text-decoration: underline;
+}
 @import url('form.css');
 @import url('table.css');
 
@@ -17,7 +26,7 @@ div.head{
 }
 div.action{
     margin: 1em 0;
-    border-bottom: 1px solid blueviolet;
+//    border-bottom: 1px solid blueviolet;
 }
 div.cashbox{
     margin: 1em 0;
