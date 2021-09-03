@@ -4,14 +4,19 @@ class UA{
     global $db,$sd;
     $e = $data['email'];
     $p = $data['password'];
-    $s = $db->prepare("SELECT id,firstname,lastname,email FROM ua WHERE email=? AND password=?;");
-    $rs = $s->execute(array($e,md5($p)));
-    if($rs){ 
-      $sd->authenticated = true; 
-      $this->rt();
-    }else{ 
-      $sd->authenticated = false; 
+    try{
+      $s = $db->prepare("SELECT id,firstname,lastname,email FROM ua WHERE email=? AND password=?;");
+      $rs = $s->execute(array($e,md5($p)));
+      if($rs){ 
+        $sd->authenticated = true; 
+        $this->rt();
+      }else{ 
+        $sd->authenticated = false; 
+      }
+    }catch(Exception $e){
+      echo $e->getMessage();
     }
+    
   }
   function signup($data){
     global $db;

@@ -1,4 +1,8 @@
-<form>
+<?php
+  if($_POST){ $cash->out($_POST); }
+?>
+
+<form method="post">
   <fieldset>
     <legend>cash out</legend>
     <!--input type="date" name="date" placeholder="date..." /-->

@@ -1,15 +1,22 @@
+<div class="cashbox">
+  <?php 
+    $balance = $cash->balance();
+    $class = ($balance > 0)? 'cashin':'cashout';
+    echo "Cash balance: <span class='$class'>K".number_format($balance,2)."</span>";
+    $cashflow = $cash->flow();
+  ?> 
+</div>
 <table>
   <thead>
     <tr>
-      <th>description</th><th>amount</th><th>balance</th>
+      <th>Transaction</th><th>Amount</th><th>Balance</th>
     <tr>
   </thead>
+  <?php foreach($cashflow as $row): ?>
   <tbody>
     <tr>
-      <td>cash in</td><td>K50.00</td><td>K50.00</td>
+      <td><?php echo $row['transaction']; ?></td><td align="right" class="<?php echo ($row['amount'] > 0)? 'cashin':'cashout';?>"><?php echo "K" . number_format($row['amount'],2); ?></td><td align="right"><?php echo "K" . number_format($row['balance'],2);?></td>
     </tr>
-    <tr>
-      <td>cash out</td><td>K20.00</td><td>K30.00</td>
-    </tr>
+  <?php endforeach; ?>
   </tbody>
 </table>

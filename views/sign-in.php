@@ -1,5 +1,5 @@
 <?php
- include "oi.php";
+ //include "oi.php";
  if($_POST){ $ua->signin($_POST); }
 ?>
 <form method="post">
@@ -7,6 +7,6 @@
     <legend>sign in</legend>
     <input type="email" name="email" placeholder="email..."/>
     <input type="password" name="password" placeholder="password..." />
-    <button type="submit">sign in</button>
+    <button type="submit" name=sign value="in">sign in</button>
   </fieldset>
 </form>

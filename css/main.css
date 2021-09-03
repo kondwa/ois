@@ -1,1 +1,34 @@
-a{ font-color: gold; }
+a{ color: gold; }
+@import url('form.css');
+@import url('table.css');
+
+div.main{
+    margin: 0 auto;
+    width: 30vw;
+    border: 1px solid silver;
+}
+div.head{
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    border-bottom: 1px solid silver;
+}
+div.action{
+    margin: 1em 0;
+    border-bottom: 1px solid silver;
+}
+div.cashbox{
+    margin: 1em 0;
+    padding: 3px;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+div.content{
+    margin: 1em;
+}
+.cashin{
+    color: green;
+}
+.cashout{
+    color: red;
+}

@@ -1,3 +1,6 @@
+<?php
+  if($_POST){ $cash->in($_POST); }
+?>
 <form method="post">
   <fieldset>
     <legend>cash in</legend>
