@@ -5,7 +5,7 @@
 <div class='main'>
 <div class="head">
   <span class="brand">
-    <?php echo "oi:Cards&trade; "; ?>
+    <?php echo "oi:Cash&trade; "; ?>
   </span>
   <span>&nbsp;</span>
   <nav>
