@@ -1,4 +1,4 @@
-a{ color: gold; }
+a{ color: silver; }
 @import url('form.css');
 @import url('table.css');
 
@@ -19,7 +19,7 @@ div.action{
 }
 div.cashbox{
     margin: 1em 0;
-    padding: 3px;
+    padding: 5px;
     border: 1px solid silver;
     border-radius: 5px;
 }

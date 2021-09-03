@@ -15,7 +15,9 @@
   <?php foreach($cashflow as $row): ?>
   <tbody>
     <tr>
-      <td><?php echo $row['transaction']; ?></td><td align="right" class="<?php echo ($row['amount'] > 0)? 'cashin':'cashout';?>"><?php echo "K" . number_format($row['amount'],2); ?></td><td align="right"><?php echo "K" . number_format($row['balance'],2);?></td>
+      <td><?php echo $row['transaction']; ?></td>
+      <td align="right" class="<?php echo ($row['amount'] > 0)? 'cashin':'cashout';?>"><?php echo "K" . number_format($row['amount'],2); ?></td>
+      <td align="right" class="<?php echo ($row['balance'] > 0)? 'cashin':'cashout';?>"><?php echo "K" . number_format($row['balance'],2);?></td>
     </tr>
   <?php endforeach; ?>
   </tbody>
