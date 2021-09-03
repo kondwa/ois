@@ -30,6 +30,7 @@ div.content{
 }
 .brand{
     font-weight: bold;
+    flex: 1;
 }
 .cashin{
     color: green;

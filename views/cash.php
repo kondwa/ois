@@ -1,5 +1,4 @@
-<div class="action">
-Cash action 
+<div class="action"> 
 - <a href="?cash=in">Cash in</a>
 - <a href="?cash=out">Cash out</a>
 </div>
