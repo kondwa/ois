@@ -1,4 +1,4 @@
-a{ color: gold; }
+a{ color: blueviolet; }
 @import url('form.css');
 @import url('table.css');
 
@@ -6,23 +6,23 @@ div.main{
     margin: 0 auto;
     width: 30vw;
     min-width: 350px;
-    border: 1px solid gold;
+    border: 1px solid blueviolet;
     border-radius: 5px;
 }
 div.head{
     display: flex;
     flex-direction: row;
     margin: 1em;
-    border-bottom: 1px solid gold;
+    border-bottom: 1px solid blueviolet;
 }
 div.action{
     margin: 1em 0;
-    border-bottom: 1px solid gold;
+    border-bottom: 1px solid blueviolet;
 }
 div.cashbox{
     margin: 1em 0;
     padding: 5px;
-    border: 1px solid gold;
+    border: 1px solid blueviolet;
     border-radius: 5px;
 }
 div.content{

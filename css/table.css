@@ -1,23 +1,23 @@
 table{
- border: 1px solid gold;
+ border: 1px solid blueviolet;
  border-radius: 5px;
  margin: 1px;
- padding: 3px;
+ padding: 1px;
  width: 100%;
 }
 table thead th{
-  border: 1px solid gold;
+  border: 1px solid blueviolet;
   margin: 1px;
   padding: 3px;
-  background-color: gold;
+  background-color: blueviolet;
 }
 table tbody td{
-  border: 1px solid gold;
+  border: 1px solid blueviolet;
   margin: 1px;
   padding: 3px;
 }
 table tfoot td{
-  border: 1px solid gold;
+  border: 1px solid blueviolet;
   margin: 1px;
   padding: 1px;
 }
