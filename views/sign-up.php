@@ -5,11 +5,11 @@ if($_POST){
 ?>
 <form method="post">
   <fieldset>
-    <legend>sign up</legend>
-    <input type="text" name="firstname" placeholder="first name..." />
-    <input type="text" name="lastname" placeholder="last name..." />
-    <input type="email" name="email" placeholder="email.." />
-    <input type="password" name="password" placeholder="password..." />
-    <button type="submit">sign up</button>
+    <legend>Sign up</legend>
+    <input type="text" name="firstname" placeholder="First name..." />
+    <input type="text" name="lastname" placeholder="Last name..." />
+    <input type="email" name="email" placeholder="Email.." />
+    <input type="password" name="password" placeholder="Password..." />
+    <button type="submit">Sign up</button>
   </fieldset>
 </form>

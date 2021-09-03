@@ -4,9 +4,9 @@
 
 <form method="post">
   <fieldset>
-    <legend>cash out</legend>
+    <legend>Cash out</legend>
     <!--input type="date" name="date" placeholder="date..." /-->
-    <input type="money" name="amount" placeholder="amount..." />
-    <button>cash out</button>
+    <input type="money" name="amount" placeholder="Amount..." />
+    <button>Cash out</button>
   </fieldset>
 </form>

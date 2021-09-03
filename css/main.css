@@ -1,30 +1,35 @@
-a{ color: silver; }
+a{ color: gold; }
 @import url('form.css');
 @import url('table.css');
 
 div.main{
     margin: 0 auto;
     width: 30vw;
-    border: 1px solid silver;
+    min-width: 350px;
+    border: 1px solid gold;
+    border-radius: 5px;
 }
 div.head{
     display: flex;
     flex-direction: row;
     margin: 1em;
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid gold;
 }
 div.action{
     margin: 1em 0;
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid gold;
 }
 div.cashbox{
     margin: 1em 0;
     padding: 5px;
-    border: 1px solid silver;
+    border: 1px solid gold;
     border-radius: 5px;
 }
 div.content{
     margin: 1em;
+}
+.brand{
+    font-weight: bold;
 }
 .cashin{
     color: green;

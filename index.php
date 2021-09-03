@@ -24,7 +24,10 @@
     case "up": include "views/sign-up.php"; break;
     case "in": include "views/sign-in.php"; break;
     case "out": include "views/sign-out.php"; break;
-    default: if($ua->in()){ include "views/cash.php"; }
+    default: 
+      if($ua->in()){ include "views/cash.php"; }
+      else{ include "views/sign-in.php"; }
+    break;
  }
 ?>
 </div>

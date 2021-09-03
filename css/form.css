@@ -1,5 +1,5 @@
 form{
-  border: 1px solid silver;
+  border: 1px solid gold;
   border-radius: 5px;
   display: inline-table;
   width: 100%;
@@ -7,13 +7,13 @@ form{
   padding: 1px;
 }
 form fieldset{
-  border: 1px solid silver;
+  border: 1px solid gold;
   border-radius: 5px;
   margin: 3px;
   padding: 3px;
 }
 form legend{
-  border: 1px solid silver;
+  border: 1px solid gold;
   border-radius: 5px;
   margin: 3px;
   padding: 3px;
