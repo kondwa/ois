@@ -5,9 +5,9 @@
 <div>
 <?php
 switch(@$_GET['cash']){
-  case "in": include "cash-in.php"; break;
-  case "out": include "cash-out.php"; break;
+  case "in": include "views/cash-in.php"; break;
+  case "out": include "views/cash-out.php"; break;
 }
 ?>
 </div>
-<?php include "cash-flow.php"; ?>
+<?php include "views/cash-flow.php"; ?>
