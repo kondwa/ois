@@ -7,7 +7,8 @@ class UA{
     try{
       $s = $db->prepare("SELECT id,firstname,lastname,email FROM ua WHERE email=? AND password=?;");
       $rs = $s->execute(array($e,md5($p)));
-      if($rs){ 
+      $u = $s->fetch();
+      if($u){ 
         $sd->authenticated = true; 
         $this->rt();
       }else{ 

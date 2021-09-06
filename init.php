@@ -6,7 +6,8 @@ try{
     firstname VARCHAR(64),
     lastname VARCHAR(64),
     email VARCHAR(64),
-    password VARCHAR(300)
+    password VARCHAR(300),
+    UNIQUE(email)
     );"
   );
   $db->exec("CREATE TABLE IF NOT EXISTS mydb.cash(

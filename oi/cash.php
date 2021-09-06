@@ -28,14 +28,20 @@ class CASH{
     }
     function balance(){
         global $db;
-        $s = $db->query("SELECT sum(amount) AS balance FROM cash;");
-        $row = $s->fetch();
-        return $row['balance'];
+        try{
+            $s = $db->query("SELECT sum(amount) AS balance FROM cash;");
+            $row = ($s)? $s->fetch(): 0;
+        }catch(Exception $e){
+            //echo $e->getMessage();
+            return 0;
+        }
+        
+        return isset($row['balance'])?$row['balance']:0;
     }
     function flow(){
         global $db;
         $s = $db->query("SELECT * FROM cash ORDER BY id DESC;");
-        $rows = $s->fetchAll();
+        $rows = ($s)? $s->fetchAll():[];
         return $rows;
     }
 }
