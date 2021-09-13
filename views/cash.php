@@ -2,8 +2,7 @@
 - <a href="?cash=in">Cash in</a>
 - <a href="?cash=out">Cash out</a>
 </div>
-<link href="table.css" type="text/css" rel="stylesheet" />
-<div>
+<div class='cash'>
 <?php
 switch(@$_GET['cash']){
   case "in": include "views/cash-in.php"; break;

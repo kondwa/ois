@@ -2,7 +2,6 @@ form{
   border: 1px solid blueviolet;
   border-radius: 5px;
   display: inline-table;
-  width: 100%;
   margin: 1px auto;
   padding: 1px;
 }

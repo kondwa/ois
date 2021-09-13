@@ -36,6 +36,9 @@ div.cashbox{
 }
 div.content{
     margin: 1em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .brand{
     font-weight: bold;
@@ -46,4 +49,10 @@ div.content{
 }
 .cashout{
     color: red;
+}
+.cash{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
